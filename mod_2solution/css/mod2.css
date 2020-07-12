@@ -2,20 +2,33 @@
 	box-sizing: border-box;
 	font-family: Arial;
 }
+p{
+	font-size: 125%;
+	margin-top: 60px;
+	padding: 10px;
+}
 h1{
 	text-align: center;
-	margin=10px;
+	margin-bottom: 20px;
+	font-size: 175%;
 }
-.col-md-4{
-	border: 1px;
+#main{
+	position: absolute;
+	width:100%;
+}
+#main>div{
+	border: 1px solid black;
 	padding: 5px;
-	margin:5px;
+	margin: 5px;
+	position:relative;
 	background-color: grey;
 }
-div>div{
-	border:1px;
-	position: relative;
+div>div>div{
+	
+	position: absolute;
+	right:0px;
 	float:right;
+	font-size: 175%;
 	text-align: center;
 }
 #div1{
@@ -26,17 +39,23 @@ div>div{
 	color: white;
 }
 #div3{
-	background-color: yellow;
+	background-color: green;
+	color:white;
 }
-@media ( min-width=992px){
-	col-lg-4{
-		float:left;
-		width=33.33%;
+@media (min-width: 992px) {
+  .col-lg-3 {
+    float: left;
+    width: 32%;
+  }
+  
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-6{
+		float: left;
+		width: 48%;
+		margin-left:5px;
 	}
-}
-@media (min-width=768px) and (max-width = 991px){
-	cold-md-6{
-		float:left;
-		width=50%;
+	.col-sm-12{
+		float: left;
 	}
 }
