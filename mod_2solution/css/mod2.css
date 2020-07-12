@@ -1,0 +1,42 @@
+*{
+	box-sizing: border-box;
+	font-family: Arial;
+}
+h1{
+	text-align: center;
+	margin=10px;
+}
+.col-md-4{
+	border: 1px;
+	padding: 5px;
+	margin:5px;
+	background-color: grey;
+}
+div>div{
+	border:1px;
+	position: relative;
+	float:right;
+	text-align: center;
+}
+#div1{
+	background-color: blue;
+}
+#div2{
+	background-color: red;
+	color: white;
+}
+#div3{
+	background-color: yellow;
+}
+@media ( min-width=992px){
+	col-lg-4{
+		float:left;
+		width=33.33%;
+	}
+}
+@media (min-width=768px) and (max-width = 991px){
+	cold-md-6{
+		float:left;
+		width=50%;
+	}
+}
